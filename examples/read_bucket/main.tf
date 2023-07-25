@@ -3,16 +3,28 @@
 # Copyright 2020 IBM
 #####################################################
 
-resource "time_sleep" "wait_3_seconds" {
-  create_duration = "2500s"
+resource "time_sleep" "wait_seconds" {
+  create_duration = "3500s"
 }
 
-resource "null_resource" "topic_events" {
+resource "null_resource" "topic_events_1" {
   triggers = {
     always_run = timestamp()
     topic = "rmq"
   }
-  depends_on = [time_sleep.wait_3_seconds]
+  depends_on = [time_sleep.wait_seconds]
+}
+
+resource "time_sleep" "wait_seconds_1" {
+  create_duration = "3500s"
+}
+
+resource "null_resource" "topic_events_2" {
+  triggers = {
+    always_run = timestamp()
+    topic = "rmq_test"
+  }
+  depends_on = [time_sleep.wait_seconds_1]
 }
 
 #data "ibm_cos_bucket" "cos_bucket" {
