@@ -2,8 +2,6 @@
 # COS Bucket
 # Copyright 2020 IBM
 #####################################################
-variable "ibmcloud_api_key" {
-}
 
 variable "resource_group" {
     default = "Default"
