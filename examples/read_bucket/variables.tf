@@ -5,10 +5,14 @@
 variable "ibmcloud_api_key" {
 }
 
+variable "resource_group" {
+    default = "Default"
+}
+
 variable "bucket_name" {
     description = "Name of the bucket"
     type        = string
-    default =   "shift-left-cost"
+    default =   "Cloud Object Storage-e9"
 }
 
 variable "location" {
