@@ -12,7 +12,7 @@ variable "resource_group" {
 variable "bucket_name" {
     description = "Name of the bucket"
     type        = string
-    default =   "Cloud Object Storage-e9"
+    default =   "shift-left-cost"
 }
 
 variable "location" {
