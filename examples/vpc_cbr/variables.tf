@@ -8,3 +8,9 @@ variable "vpc_name" {
     type        = string
     default =   "test"
 }
+
+variable "region" {
+    description = "Name of the region"
+    type        = string
+    default =   "eu-fr2"
+}
