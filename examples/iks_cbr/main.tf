@@ -4,5 +4,5 @@
 #####################################################
 
 data "ibm_container_cluster" "cluster" {
-  cluster_name_id = var.cluster_name_id
+  name = var.cluster_name_id
 }
