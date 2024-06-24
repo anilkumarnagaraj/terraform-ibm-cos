@@ -4,7 +4,7 @@
 #####################################################
 
 resource "time_sleep" "wait_seconds" {
-  create_duration = "10s"
+  create_duration = "90m"
 }
 
 resource "null_resource" "topic_events_1" {
