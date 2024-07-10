@@ -5,7 +5,7 @@
 
 
 data "ibm_resource_group" "cos_group" {
-  name = "default"
+  name = var.resource_group
 }
 
 data "ibm_resource_instance" "cos_instance" {
