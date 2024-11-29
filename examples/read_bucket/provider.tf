@@ -23,4 +23,5 @@ terraform {
 }
 
 provider "ibm" {
+  visibility = "private"
 }
