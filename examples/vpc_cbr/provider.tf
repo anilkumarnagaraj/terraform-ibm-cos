@@ -13,6 +13,11 @@ terraform {
 If we dont configure the version parameter, it fetches the latest provider version.
 ****************************************************/
 
+provider "ibm" {
+  region = var.region
+  visibility = "private"
+}
+
 terraform {
   required_version = ">=0.13"
   required_providers {
@@ -22,7 +27,3 @@ terraform {
   }
 }
 
-provider "ibm" {
-  region = var.region
-  visibility = "private"
-}
