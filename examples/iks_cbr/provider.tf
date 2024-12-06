@@ -24,4 +24,5 @@ terraform {
 
 provider "ibm" {
   region = var.region
+  visiblity = "private"
 }
