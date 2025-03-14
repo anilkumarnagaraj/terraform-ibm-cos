@@ -8,7 +8,7 @@ default = ""
 }
 
 variable "resource_group" {
-    default = "Default"
+    default = "schematics-fvt"
 }
 
 variable "instance_name" {
