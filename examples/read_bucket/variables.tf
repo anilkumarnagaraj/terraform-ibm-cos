@@ -14,13 +14,13 @@ variable "resource_group" {
 variable "instance_name" {
     description = "Name of the bucket"
     type        = string
-    default =   "cos-cbr-test"
+    default =   "Cloud Object Storage-gp"
 }
 
 variable "bucket_name" {
     description = "Name of the bucket"
     type        = string
-    default =   "sch-cos-cbr"
+    default =   "sch-ca-tor-cos-test"
 }
 
 variable "location" {
@@ -32,12 +32,12 @@ variable "location" {
 variable "storage_class" {
     description = " storage class to use for the bucket."
     type        = string
-    default     = "smart"
+    default     = "standard"
 }
 
 variable "cos_instance_id"{
     description = "resource instance id"
     type        = string
-    default = "crn:v1:bluemix:public:cloud-object-storage:global:a/ab3ed67929c2a81285fbb5f9eb22800a:1802f308-f656-4c8f-8a3a-b732946eaf02::"
+    default = "crn:v1:bluemix:public:cloud-object-storage:global:a/041de121a3254274ac46095e6477dcf6:9b6ec909-eed7-4416-afed-0904df5363cb::"
 }
 
