@@ -19,7 +19,7 @@ data "ibm_cos_bucket" "read-bucket" {
   resource_instance_id  = data.ibm_resource_instance.cos_instance.id
   bucket_type           = "cross_region_location"
   bucket_region         = "us"
-  endpoint_type         = "private"
+  #endpoint_type         = "private"
 }
 
 output "bucket_private_endpoint" {
