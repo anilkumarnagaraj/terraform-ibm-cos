@@ -10,5 +10,4 @@ data "ibm_container_vpc_cluster" "cluster" {
 data "ibm_container_cluster_config" "cluster_config" {
   cluster_name_id = var.cluster_name_id
   admin           = true
-  endpoint_type   = "private"
 }
