@@ -15,6 +15,7 @@ If we dont configure the version parameter, it fetches the latest provider versi
 
 provider "ibm" {
   region = var.region
+  ibmcloud_api_key = var.ibmcloud_api_key 
 }
 
 terraform {
