@@ -15,7 +15,6 @@ If we dont configure the version parameter, it fetches the latest provider versi
 
 provider "ibm" {
   region = var.region
-  visibility = "private"
 }
 
 terraform {
