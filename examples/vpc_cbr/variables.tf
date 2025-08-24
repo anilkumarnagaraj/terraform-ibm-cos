@@ -6,11 +6,11 @@
 variable "vpc_name" {
     description = "Name of the vpc"
     type        = string
-    default =   "test"
+    default =   "vpc-eugb-dn"
 }
 
 variable "region" {
     description = "Name of the region"
     type        = string
-    default =   "eu-fr2"
+    default =   "eu-gb"
 }
