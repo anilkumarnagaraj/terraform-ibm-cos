@@ -14,3 +14,8 @@ variable "region" {
     type        = string
     default =   "eu-de"
 }
+
+variable "ibmcloud_api_key" {
+    description = "api key"
+    type        = string
+}
