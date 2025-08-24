@@ -12,5 +12,5 @@ variable "cluster_name_id" {
 variable "region" {
     description = "Name of the region"
     type        = string
-    default =   "us-south"
+    default =   "eu-de"
 }
