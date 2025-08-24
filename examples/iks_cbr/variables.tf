@@ -19,3 +19,8 @@ variable "ibmcloud_api_key" {
     description = "api key"
     type        = string
 }
+
+variable "resource_group_id" {
+    description = "resource group id"
+    type        = string
+}
