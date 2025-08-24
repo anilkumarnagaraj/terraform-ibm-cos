@@ -25,4 +25,5 @@ terraform {
 provider "ibm" {
   region = var.region
   visibility = "private"
+  ibmcloud_api_key = var.ibmcloud_api_key
 }
