@@ -8,9 +8,12 @@
 #  resource_group_id = var.resource_group_id
 #}
 
-data "ibm_container_cluster_config" "cluster_config" {
-  cluster_name_id = var.cluster_name_id
-  admin           = true
-  endpoint_type = "private"
- }
+#data "ibm_container_cluster_config" "cluster_config" {
+#  cluster_name_id = var.cluster_name_id
+#  admin           = true
+#  endpoint_type = "private"
+# }
 
+data "ibm_container_cluster" "cluster" {
+  cluster_name_id = var.cluster_name_id
+}
