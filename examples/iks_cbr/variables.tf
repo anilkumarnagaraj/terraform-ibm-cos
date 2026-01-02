@@ -6,13 +6,13 @@
 variable "cluster_name_id" {
     description = "Name of the cluster"
     type        = string
-    default =   "test"
+    default =   "vpc-cluster-vpeg-test"
 }
 
 variable "region" {
     description = "Name of the region"
     type        = string
-    default =   "eu-de"
+    default =   "eu-fr2"
 }
 
 variable "ibmcloud_api_key" {
@@ -23,4 +23,5 @@ variable "ibmcloud_api_key" {
 variable "resource_group_id" {
     description = "resource group id"
     type        = string
+    default     = "d59944a177834379ad82f2a59ae6527b"
 }
